@@ -2,18 +2,16 @@ import { ChangeDetectionStrategy, Component, input, ViewChild } from '@angular/c
 import { CommonModule } from '@angular/common';
 import { MatMenu, MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
 
 export interface HMenuItem {
   displayName: string;
-  iconName: string;
-  route?: string;
+  fn?: () => void;
   children?: HMenuItem[];
 }
 
 @Component({
   selector: 'h-menu-item',
-  imports: [MatMenuModule, CommonModule, MatButtonModule, MatIconModule],
+  imports: [MatMenuModule, CommonModule, MatButtonModule],
   templateUrl: './h-menu-item.html',
   styleUrl: './h-menu-item.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
