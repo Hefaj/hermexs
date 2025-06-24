@@ -1,0 +1,12 @@
+<aside class="palette">
+  <h3>Palette</h3>
+  <mat-nav-list>
+    <mat-list-item *ngFor="let md of blocks"
+                   draggable="true"
+                   (dragstart)="dragStart(md, $event)"
+                   (click)="selectBlock(md)">
+      <mat-icon matListIcon>{{ md.icon }}</mat-icon>
+      <h4 matLine>{{ md.displayName }}</h4>
+    </mat-list-item>
+  </mat-nav-list>
+</aside>
