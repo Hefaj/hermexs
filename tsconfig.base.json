@@ -15,6 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@h-core/model": ["libs/model/src/index.ts"],
+      "@h-core/service": ["libs/service/src/index.ts"],
       "@h-core/ui": ["libs/ui/src/index.ts"],
       "creator/Routes": [
         "apps/remote/creator/src/app/remote-entry/entry.routes.ts"
