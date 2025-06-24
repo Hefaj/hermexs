@@ -1,0 +1,18 @@
+<div class="basic-container">
+    @for (item of data().items; track $index) {
+        <!-- Handle branch node buttons here -->
+         @if (item.children && item.children.length > 0) {
+             <h-menu-item #menu [items]="item.children" />
+             <button mat-raised-button color="primary" [matMenuTriggerFor]="menu.childMenu">
+                 {{item.displayName}}
+                 <mat-icon>expand_more</mat-icon>
+             </button>
+         }
+          @if (!item.children || item.children.length === 0) {
+        <!-- Leaf node buttons here -->
+         <button mat-button color="primary" (click)="1">
+            {{item.displayName}}
+          </button>
+        }
+    }
+</div>

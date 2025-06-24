@@ -1,0 +1,4 @@
+{
+  "erp": "http://localhost:4201/mf-manifest.json",
+  "creator": "http://localhost:4202/mf-manifest.json"
+}

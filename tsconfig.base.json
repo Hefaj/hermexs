@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@h-core/ui": ["libs/ui/src/index.ts"],
+      "creator/Routes": [
+        "apps/remote/creator/src/app/remote-entry/entry.routes.ts"
+      ],
+      "erp/Routes": ["apps/remote/erp/src/app/remote-entry/entry.routes.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
