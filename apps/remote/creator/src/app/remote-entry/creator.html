@@ -1,9 +1,32 @@
-<div class="creator-entry">
-    <h-menu [data]="navItems"></h-menu>
+<div class="page-builder-container">
+  <header class="builder-header">
+    <h1>Kreator Stron</h1>
+    </header>
 
-    <div class="creator-entry__content">
-        <creator-palette />
-        <div [style.flexGrow]="'1'">workspace</div>
-        <div>properties</div>
-    </div>
+  <main class="builder-main">
+    <aside class="blocks-palette-container">
+      <h2>Dostępne Bloki</h2>
+      <div>
+        <app-palette />
+      </div>
+    </aside>
+
+    <section class="workspace-container">
+      <h2>Obszar Roboczy</h2>
+      <div style="padding: 10px; flex-grow: 1; border: 1px solid #ccc; display: flex;">
+        <app-workspace />
+      </div>
+    </section>
+
+    <aside class="settings-panel-container">
+      <h2>Ustawienia Bloku</h2>
+      <div style="padding: 10px; min-height: 300px;">
+        (Miejsce na Panel Ustawień)
+      </div>
+    </aside>
+  </main>
+
+  <footer class="builder-footer">
+    <p>&copy; 2025 Kreator Stron</p>
+  </footer>
 </div>
