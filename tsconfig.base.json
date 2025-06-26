@@ -15,13 +15,15 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@h-core/model": ["libs/model/src/index.ts"],
-      "@h-core/service": ["libs/service/src/index.ts"],
-      "@h-core/ui": ["libs/ui/src/index.ts"],
+      "@h-block": ["libs/h-blocks/src/index.ts"],
+      "@h-creator-core": ["libs/h-creator-core/src/index.ts"],
+      "@h-models": ["libs/shared/h-models/src/index.ts"],
+      "@h-ui": ["libs/shared/h-ui/src/index.ts"],
       "creator/Routes": [
         "apps/remote/creator/src/app/remote-entry/entry.routes.ts"
       ],
-      "erp/Routes": ["apps/remote/erp/src/app/remote-entry/entry.routes.ts"]
+      "erp/Routes": ["apps/remote/erp/src/app/remote-entry/entry.routes.ts"],
+      "h-cdk-extensions": ["libs/h-cdk-extensions/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
