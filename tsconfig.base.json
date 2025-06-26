@@ -19,6 +19,7 @@
       "@h-creator-core": ["libs/h-creator-core/src/index.ts"],
       "@h-models": ["libs/shared/h-models/src/index.ts"],
       "@h-ui": ["libs/shared/h-ui/src/index.ts"],
+      "@h-utils": ["libs/shared/h-utils/src/index.ts"],
       "creator/Routes": [
         "apps/remote/creator/src/app/remote-entry/entry.routes.ts"
       ],

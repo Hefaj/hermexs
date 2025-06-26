@@ -1,1 +1,2 @@
-export * from './lib/h-models/h-models';
+export * from './lib/block.model';
+export * from './lib/page.model';
